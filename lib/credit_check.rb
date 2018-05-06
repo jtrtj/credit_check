@@ -1,5 +1,6 @@
 require 'pry'
 
+# Your Luhn Algorithm Here
 class CreditCheck
   def credit_card_check(credit_card_number)
       get_sum_of_luhn_array(credit_card_number) % 10 == 0
@@ -63,7 +64,10 @@ class CreditCheck
 
 end
 
+# Output
 valid = CreditCheck.new.credit_card_check("4929735477250543")
+## If it is valid, print "The number is valid!"
+## If it is invalid, print "The number is invalid!"
 if valid == true
   puts "The number is valid!"
 else
