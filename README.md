@@ -1,4 +1,12 @@
-# Credit Check
+## Credit Check
+This was my first Ruby app that had a test and implemented a class
 
-This is a starter repo for Credit Check, a Turing School Back End Mod 1 project described in more detail [here](http://backend.turing.io/module1/projects/credit_check).
+The project spec from Turing can be found here: [here](http://backend.turing.io/module1/projects/credit_check).
 
+Small code snippet:
+```ruby
+class CreditCheck
+  def credit_card_check(credit_card_number)
+      get_sum_of_luhn_array(credit_card_number) % 10 == 0
+  end
+```
